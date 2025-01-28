@@ -1,0 +1,25 @@
+.{
+    .name = "RP2040-Decoder",
+    .version = "1.0.0",
+    .minimum_zig_version = "0.13.0",
+    .dependencies = .{
+        .@"pico-sdk" = .{
+            .url = "git+https://github.com/voroskoi/pico-sdk#zig",
+            .hash = "1220d5c4d04fe7a3f382ba3887e0984129cce7d2e66a3ae45b05ff92f685776aa82d",
+            // .path = "../pico-sdk",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "core0.h",
+        "core0.c",
+        "core1.h",
+        "core1.c",
+        "CV.h",
+        "RP2040-Decoder-board-Rev-0_3.h",
+        "RP2040-Decoder-board-Rev-1_0.h",
+        "shared.h",
+        "shared.c",
+    },
+}
